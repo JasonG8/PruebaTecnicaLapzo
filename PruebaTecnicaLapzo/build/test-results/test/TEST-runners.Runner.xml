@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.Runner" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-19T21:03:16" hostname="LAPTOP-J5US1KKC" time="15.037">
+  <properties/>
+  <testcase name="Iniciar Sesion y realizar una compra exitosa" classname="runners.Runner" time="15.037"/>
+  <system-out><![CDATA[
+@PruebaTecnicaLapzo
+Escenario: Iniciar Sesion y realizar una compra exitosa ?[90m# src/test/resources/features/FuncionalidadCarroDeCompras.feature:8?[0m
+  ?[32mDado ?[0m?[32mque el usuario ingresa a la pagina Sauce Demo?[0m    ?[90m# stepDefinitions.SauceDemoStepDefinitions.elUsuarioNecesitaIngresarALaPaginaAdvantageShoppingParaRegistrarse()?[0m
+  ?[32mCuando ?[0m?[32mel digita usuario y clave?[0m                      ?[90m# stepDefinitions.SauceDemoStepDefinitions.elIngresaLaInformacionNecesariaParaCrearElRegistro()?[0m
+  ?[32mEntonces ?[0m?[32mel verifica que se ha iniciado correctamente?[0m ?[90m# stepDefinitions.SauceDemoStepDefinitions.elVerificaQueSeHaResgistradoEnElSistema()?[0m
+  ?[32mY ?[0m?[32mel usuario realiza un proceso de compra?[0m             ?[90m# stepDefinitions.SauceDemoStepDefinitions.queElUsuarioAgregaUnProductoNuevoAlCarroDeCompras()?[0m
+  ?[32mEntonces ?[0m?[32mverifica la compra exitosa?[0m                   ?[90m# stepDefinitions.SauceDemoStepDefinitions.verificaLaCompraExitosa()?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 121.0.6167.85 (3f98d690ad7e59242ef110144c757b2ac4eef1a2-refs/branch-heads/6167@{#1539}) on port 54629
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+feb 19, 2024 4:03:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected upstream dialect: W3C
+feb 19, 2024 4:03:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 121, so returning the closest version found: a no-op implementation
+feb 19, 2024 4:03:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Unable to find CDP implementation matching 121.
+feb 19, 2024 4:03:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
