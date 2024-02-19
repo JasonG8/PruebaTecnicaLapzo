@@ -1,8 +1,7 @@
-# **PRUEBA TECNICA LAPZO PARA QA TESTER**
+# **PRUEBA TECNICA LAPZO PARA QA AUTOMATION**
 
 ## Introducción 📖
-Automatización desarrollada para cumplir con el reto técnico para ingresar al equipo de QA en Lapzo.
-La automatización se realizó para la pagina [SauceDemo](https://www.saucedemo.com/).
+Esta automatización se ha desarrollado como parte del proceso de evaluación técnica para unirse al equipo de QA en Lapzo. La automatización está diseñada para cumplir con los desafíos técnicos y se ha implementado en el sitio web [SauceDemo](https://www.saucedemo.com/).
 
 ## Pre-requisitos 📋
 - Java version 1.8 update 241 o superior y JDK (variables de entorno configuradas)
