@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Proyecto de automatizacion de pruebas</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="81edc0570412e2f4dee20328598212321aa134d9663771b222b3d1b23c0577af.html">Realizar Proceso De Compra Exitoso En La Pagina Saucedemo.com</a></span>
+                > <span class="truncate-60"><a
+                    href="215f3087973755b9b03f4be164a9470dfa96ba6afc2c61bc2ad2cdef17ecb14c.html">Iniciar Sesion y realizar una compra exitosa </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 19-02-2024 16:14</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Realizar Proceso De Compra Exitoso En La Pagina Saucedemo.com </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario funcional del sitio web saucedemo.com<br />
+Quiero que se apliquen las acciones necesarias<br />
+Para validar la funcionalidad  carro de compras
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="3eeb6de433440e2630362ad222a53ebc167c39fb759a0c4dd82e2af94716bf91.html">Prueba Tecnica Lapzo
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Iniciar Sesion y realizar una compra exitosa
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="4594896fba406f4f1786564777ca7a1856fa613e943175031e69cce497b7ef35.png" title=" Dado que el usuario ingresa a la pagina Sauce Demo" width="2560"/>
+                <img src="3d6e174dbe2d676204925667a621b24c74c4e54bc762055b7b273411b52442ff.png" title=" Cuando el digita usuario y clave" width="2560"/>
+                <img src="3d6e174dbe2d676204925667a621b24c74c4e54bc762055b7b273411b52442ff.png" title=" Jason iniciar sesion" width="2560"/>
+                <img src="3d6e174dbe2d676204925667a621b24c74c4e54bc762055b7b273411b52442ff.png" title=" Jason enters 'standard_user' into nombreDeUsuario" width="2560"/>
+                <img src="3d6e174dbe2d676204925667a621b24c74c4e54bc762055b7b273411b52442ff.png" title=" Jason enters 'secret_sauce' into input clave" width="2560"/>
+                <img src="c1227264479a2fde75605895a9031d58c9e2823579eceaac4b49ad8b7ebf2c66.png" title=" Jason enters 'secret_sauce' into input clave (completed)" width="2560"/>
+                <img src="c1227264479a2fde75605895a9031d58c9e2823579eceaac4b49ad8b7ebf2c66.png" title=" Jason clicks on Boton Sign In" width="2560"/>
+                <img src="06ba0f3458a5d2f4e079db8644b9f85b1affd811926f874dfd98cdadf38e9de0.png" title=" Jason clicks on Boton Sign In (completed)" width="2560"/>
+                <img src="06ba0f3458a5d2f4e079db8644b9f85b1affd811926f874dfd98cdadf38e9de0.png" title=" Jason iniciar sesion (completed)" width="2560"/>
+                <img src="06ba0f3458a5d2f4e079db8644b9f85b1affd811926f874dfd98cdadf38e9de0.png" title=" Cuando el digita usuario y clave (completed)" width="2560"/>
+                <img src="06ba0f3458a5d2f4e079db8644b9f85b1affd811926f874dfd98cdadf38e9de0.png" title=" Entonces el verifica que se ha iniciado correctamente" width="2560"/>
+                <img src="06ba0f3458a5d2f4e079db8644b9f85b1affd811926f874dfd98cdadf38e9de0.png" title=" Then inicio sesion should be a value equal to 'Products'" width="2560"/>
+                <img src="5d10eca8129207d2f505abc79308956333266bc20c16fdb51029dd8beb0bed36.png" title=" Y el usuario realiza un proceso de compra" width="2560"/>
+                <img src="5d10eca8129207d2f505abc79308956333266bc20c16fdb51029dd8beb0bed36.png" title=" Jason realizar compra" width="2560"/>
+                <img src="5d10eca8129207d2f505abc79308956333266bc20c16fdb51029dd8beb0bed36.png" title=" Jason elegir productos" width="2560"/>
+                <img src="5d10eca8129207d2f505abc79308956333266bc20c16fdb51029dd8beb0bed36.png" title=" Jason clicks on buttonAddToCart" width="2560"/>
+                <img src="5d10eca8129207d2f505abc79308956333266bc20c16fdb51029dd8beb0bed36.png" title=" Jason clicks on buttonAddToCart" width="2560"/>
+                <img src="17fa627566bc7bf624aa544535f87fb5f13bac349955691717255333c6e0f202.png" title=" Jason clicks on buttonAddToCart (completed)" width="2560"/>
+                <img src="17fa627566bc7bf624aa544535f87fb5f13bac349955691717255333c6e0f202.png" title=" Jason elegir productos (completed)" width="2560"/>
+                <img src="17fa627566bc7bf624aa544535f87fb5f13bac349955691717255333c6e0f202.png" title=" Jason llenar datos" width="2560"/>
+                <img src="17fa627566bc7bf624aa544535f87fb5f13bac349955691717255333c6e0f202.png" title=" Jason clicks on buttonAddToCart" width="2560"/>
+                <img src="b9f369ae8db31a7aeb3a5345faf2fbe52cb75e75f6c0bbb4479fa04ed1478368.png" title=" Jason clicks on buttonAddToCart (completed)" width="2560"/>
+                <img src="b9f369ae8db31a7aeb3a5345faf2fbe52cb75e75f6c0bbb4479fa04ed1478368.png" title=" Jason clicks on Boton para verificar compra" width="2560"/>
+                <img src="09e1fc1abfb2229d8e9f661d9678893e87652a4e3f00bd5dc5c46b2e8d3a4e49.png" title=" Jason clicks on Boton para verificar compra (completed)" width="2560"/>
+                <img src="09e1fc1abfb2229d8e9f661d9678893e87652a4e3f00bd5dc5c46b2e8d3a4e49.png" title=" Jason enters 'Luis' into Campo de texto para ingresar Nombre" width="2560"/>
+                <img src="3571b1f2eb3a24bf428fcc9581899f8cd3c611f459cc8bb8ead7b5cbe8b60218.png" title=" Jason enters 'Luis' into Campo de texto para ingresar Nombre (completed)" width="2560"/>
+                <img src="3571b1f2eb3a24bf428fcc9581899f8cd3c611f459cc8bb8ead7b5cbe8b60218.png" title=" Jason enters 'Guzman' into Campo de texto para ingresar Apellido" width="2560"/>
+                <img src="afe57f7650f261a5d1bfe68ec0563bdd7cbf9386277f570c6b58cd75fb1445c1.png" title=" Jason enters 'Guzman' into Campo de texto para ingresar Apellido (completed)" width="2560"/>
+                <img src="afe57f7650f261a5d1bfe68ec0563bdd7cbf9386277f570c6b58cd75fb1445c1.png" title=" Jason enters '08100' into Campo de texto para ingresar Codigo Postal" width="2560"/>
+                <img src="f93dd9a419250e810c8afeb97d86d8cb132f8bb8b65215e5263567fac257a60e.png" title=" Jason enters '08100' into Campo de texto para ingresar Codigo Postal (completed)" width="2560"/>
+                <img src="f93dd9a419250e810c8afeb97d86d8cb132f8bb8b65215e5263567fac257a60e.png" title=" Jason clicks on Boton para continuar compra" width="2560"/>
+                <img src="367b2c4e1a3ed6f21684113ca85979fde114606047c054669bca8100dc1cd6e0.png" title=" Jason clicks on Boton para continuar compra (completed)" width="2560"/>
+                <img src="367b2c4e1a3ed6f21684113ca85979fde114606047c054669bca8100dc1cd6e0.png" title=" Jason clicks on Boton para finalizar compra" width="2560"/>
+                <img src="8589c5ba27a9de00b33b3d0ac7f3f2e4c0efb2f4f217e65a3b12ed66ac7d3ddf.png" title=" Jason clicks on Boton para finalizar compra (completed)" width="2560"/>
+                <img src="8589c5ba27a9de00b33b3d0ac7f3f2e4c0efb2f4f217e65a3b12ed66ac7d3ddf.png" title=" Jason llenar datos (completed)" width="2560"/>
+                <img src="8589c5ba27a9de00b33b3d0ac7f3f2e4c0efb2f4f217e65a3b12ed66ac7d3ddf.png" title=" Jason realizar compra (completed)" width="2560"/>
+                <img src="8589c5ba27a9de00b33b3d0ac7f3f2e4c0efb2f4f217e65a3b12ed66ac7d3ddf.png" title=" Y el usuario realiza un proceso de compra (completed)" width="2560"/>
+                <img src="8589c5ba27a9de00b33b3d0ac7f3f2e4c0efb2f4f217e65a3b12ed66ac7d3ddf.png" title=" Entonces verifica la compra exitosa" width="2560"/>
+                <img src="8589c5ba27a9de00b33b3d0ac7f3f2e4c0efb2f4f217e65a3b12ed66ac7d3ddf.png" title=" Then compra should be a value equal to 'Thank you for your order!': <span class='success-color'>SUCCESS</span>" width="2560"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.3.0</span>
+</div>
+</body>
+</html>
